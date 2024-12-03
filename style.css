@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f0f0f0; 
+    position: relative;
+    min-height: 100vh; 
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW5ncDNndGd2ZHc1MXFsMDl6eGRjcWRpbnZjemJjN2N2eGY5MGNudyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du3J3cXyzhj75IOgvA/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    animation: moveBackground 15s linear infinite;
+    z-index: -1; 
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    padding-bottom: 100px; 
+    z-index: 1; 
+}
+
+.main-heading {
+    font-size: 2rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.input-box {
+    padding: 10px;
+    font-size: 1rem;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.profile-box {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.profile-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
+
+.repo-list-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.repo-list-items li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.repo-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.repo-btn:hover {
+    background-color: #218838;
+}
+
+#h4{
+    margin-top: 10px;
+padding: 10px 20px;
+}
